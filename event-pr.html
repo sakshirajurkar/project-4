@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .main-div {
+      background-color: skyblue;
+      padding: 50px;
+    }
+
+    .card-1 {
+      background-color: beige;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .remove-all {
+      margin-left: 900px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 10px;
+    }
+
+    .grid-item {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    let count = 1;
+    function inc() {
+      count++;
+      document.getElementById("counter").innerHTML = count;
+    }
+    function dec() {
+      count--;
+      document.getElementById("counter").innerHTML = count;
+    }
+    function increse() {
+      count++;
+      document.getElementById("counter-2").innerHTML = count;
+    }
+    function decrese() {
+      count--;
+      document.getElementById("counter-2").innerHTML = count;
+    }
+    function increse1() {
+      count++;
+      document.getElementById("counter-3").innerHTML = count;
+    }
+    function decrese1() {
+      count--;
+      document.getElementById("counter-3").innerHTML = count;
+    }
+    
+    
+  </script>
+</head>
+
+<body>
+  <div class="main-div">
+    <div class="card-1">
+      <span>Shopping Card</span>
+      <span class="remove-all">Remove all</span>
+
+      <div class="grid-container">
+        <div class="grid-item">
+          <img style="width:250px;" src="apple-juice-removebg-preview (1).png">
+        </div>
+        <div class="grid-item">
+          <h3>Apple Juice</h3>
+          <p>250ml</p>
+          <img style="height: 20px;" src="veg-logo.jpg">
+        </div>
+        <div class="grid-item">
+          <button onClick="inc()"><img style="height:20px;" src="add.png"></button>
+          <h1 id="counter">0</h1>
+          <button onClick="dec()"><img style="height:20px;" src="minus.png"></button>
+
+        </div>
+        <div class="grid-item">
+          <h2>$1.99</h2>
+          <p style="color: rgb(75, 75, 252);">save for later</p>
+          <p style="color:red;">Remove</p>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img style="width:180px;" src="grape-juice-removebg-preview.png">
+        </div>
+        <div class="grid-item">
+          <h3>Grapes Juice</h3>
+          <p>250ml</p>
+          <img style="height: 20px;" src="veg-logo.jpg">
+        </div>
+        <div class="grid-item">
+          <button onClick="increse()"><img style="height:20px;" src="add.png"></button>
+          <h1 id="counter-2">0</h1>
+          <button onClick="decrese()"><img style="height:20px;" src="minus.png"></button>
+
+        </div>
+        <div class="grid-item">
+          <h2>$3.19</h2>
+          <p style="color: rgb(75, 75, 252);">save for later</p>
+          <p style="color:red;">Remove</p>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img style="width:250px;" src="mango-juice-removebg-preview.png">
+        </div>
+        <div class="grid-item">
+          <h3>Mango Juice</h3>
+          <p>250ml</p>
+          <img style="height: 20px;" src="veg-logo.jpg">
+        </div>
+        <div class="grid-item">
+          <button onClick="increse1()"><img style="height:20px;" src="add.png"></button>
+          <h1 id="counter-3">0</h1>
+          <button onClick="decrese1()"><img style="height:20px;" src="minus.png"></button>
+
+        </div>
+        <div class="grid-item">
+          <h2>$2.99</h2>
+          <p style="color: rgb(75, 75, 252);">save for later</p>
+          <p style="color:red;">Remove</p>
+        </div>
+       
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
